@@ -5,30 +5,58 @@
     <title>My Profile</title>
     <link rel="shortcut icon" href="images\developer.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
     <style>
         body{
             margin: 0px;
-            background-color: rgb(243, 188, 170);
+            text-align: center;
+            padding: 0px;
         }
         header{
             height: 12vh;
-            padding-top: 1.5vh;
-            background-color: coral;
+            padding: 0px;
         }
-        header span{
-            background-color: brown;
-            color: white;
+        .user{
+            background-color: rgb(255, 242, 66);
+            color: rgb(0, 0, 0);
+            height: 7vh;
+            line-height: 7vh;
+            margin-top: -2vh;
+            font-size: 1.4vw;
             padding: 0.4vw;
             padding-top: 0.2vw;
             padding-bottom: 0.2vw;
         }
+        nav{
+            background-color: rgb(255, 247, 133);
+            text-align: left;
+            padding-left: 4vw;
+            height: 7vh;
+            line-height: 7vh;
+        }
+        nav a{
+            text-decoration: none;
+            color:rgb(0, 0, 206);
+            font-weight: bold;
+            margin-right: 4vw;
+            font-size: 1.5vw;
+            font-family: 'Sofia', cursive;
+            transition: 0.3s;
+        }
+        .frame{
+            border: none;
+            margin-top: 4vh;
+        }
         footer{
-            background-color: chocolate;
-            height: 14.3vh;
+            background-color: rgb(255, 242, 66);
+            height: 7vh;
             padding-top: 2vh;
         }
         footer span{
-            background-color: rgb(224, 168, 127);
             margin-left: 0.6vw;
             padding-left: 2vw;
             padding-right: 1.5vw;
@@ -41,7 +69,7 @@
 <body>
     <header>
         &nbsp;&nbsp;&nbsp;
-        <span>
+        <div class="user">
         <i class="fa fa-user" aria-hidden="true"></i>
         &nbsp;
         <strong>Suhas Lawate</strong>
@@ -52,8 +80,9 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <i class="fa fa-envelope" aria-hidden="true"></i>
         &nbsp;
-        <strong>suhasrlawate1999@gmail.com</strong></span>
+        <strong>suhasrlawate1999@gmail.com</strong></div>
         <br><br>
+    </header>
         <nav>
             &nbsp;&nbsp;
             <a href="home.html" target="my_frame">HOME</a>&nbsp;&nbsp;&nbsp;
@@ -65,9 +94,8 @@
             <a href="others.html" target="my_frame">OTHERS</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <br>
         </nav>
-    </header>
     
-    <iframe name="my_frame" src="home.html" width="900px" height="450px"></iframe>
+    <iframe class="frame" name="my_frame" src="home.html" width="1000vw" height="425vh"></iframe>
     &nbsp;&nbsp;
     <footer>
         &nbsp;<span>
