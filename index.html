@@ -13,6 +13,7 @@
     <style>
         body{
             margin: 0px;
+            background-color: antiquewhite;
             text-align: center;
             padding: 0px;
         }
@@ -21,18 +22,21 @@
             padding: 0px;
         }
         .user{
-            background-color: rgb(255, 242, 66);
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            background-color: rgb(236, 60, 60);
             height: 7vh;
             line-height: 7vh;
-            margin-top: -2vh;
+            margin-top: 0vh;
             font-size: 1.4vw;
             padding: 0.4vw;
             padding-top: 0.2vw;
             padding-bottom: 0.2vw;
         }
+        .usricon{
+            margin-left: 3vw;
+        }
         nav{
-            background-color: rgb(255, 247, 133);
+            background-color: rgb(236, 60, 60);
             text-align: left;
             padding-left: 4vw;
             height: 7vh;
@@ -40,7 +44,7 @@
         }
         nav a{
             text-decoration: none;
-            color:rgb(0, 0, 206);
+            color:rgb(255, 255, 255);
             font-weight: bold;
             margin-right: 4vw;
             font-size: 1.5vw;
@@ -52,64 +56,67 @@
             margin-top: 4vh;
         }
         footer{
-            background-color: rgb(255, 242, 66);
+            background-color: rgb(236, 60, 60);
             height: 7vh;
             padding-top: 2vh;
         }
         footer span{
+            color: white;
+            font-weight: bold;
+            font-size: large;
             margin-left: 0.6vw;
             padding-left: 2vw;
             padding-right: 1.5vw;
             padding-top: 0.2vw;
             padding-bottom: 0.2vw;
         }
+        footer a{
+            color: white;
+            font-size: large;
+            margin-left: 2vw;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        &nbsp;&nbsp;&nbsp;
+        
         <div class="user">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        &nbsp;
-        <strong>Suhas Lawate</strong>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-phone-square" aria-hidden="true"></i>
-        &nbsp;
-        <strong>7030889775</strong>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-        &nbsp;
-        <strong>suhasrlawate1999@gmail.com</strong></div>
-        <br><br>
-    </header>
-        <nav>
-            &nbsp;&nbsp;
-            <a href="home.html" target="my_frame">HOME</a>&nbsp;&nbsp;&nbsp;
-            <a href="techStack.html" target="my_frame">TECH STACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="education.html" target="my_frame">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="project.html" target="my_frame">PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="hobbies.html" target="my_frame">HOBBIES</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="personalDetail.html" target="my_frame">PERSONAL</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="others.html" target="my_frame">OTHERS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="usricon"><i class="fa fa-user" aria-hidden="true"></i></span>
+        
+        <span class="usrtxt">Suhas Lawate</span>
+        
+        <span class="usricon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+        
+        <span class="usrtxt">7030889775</span>
+        
+        <span class="usricon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+        
+        <span class="usrtxt">suhasrlawate1999@gmail.com</span></div>
+
+        <nav>   
+            <a href="home.html" target="my_frame">HOME</a>
+            <a href="techStack.html" target="my_frame">TECH STACK</a>
+            <a href="education.html" target="my_frame">EDUCATION</a>
+            <a href="project.html" target="my_frame">PROJECT</a>
+            <a href="hobbies.html" target="my_frame">HOBBIES</a>
+            <a href="personalDetail.html" target="my_frame">PERSONAL</a>
+            <a href="others.html" target="my_frame">OTHERS</a>
             <br>
         </nav>
+    </header>
+    <iframe class="frame" name="my_frame" src="home.html" width="1000vw" height="472vh"></iframe>
     
-    <iframe class="frame" name="my_frame" src="home.html" width="1000vw" height="425vh"></iframe>
-    &nbsp;&nbsp;
     <footer>
-        &nbsp;<span>
-        <strong>Follow me</strong>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin-square"
-                aria-hidden="true"></i></a>
-        &nbsp;&nbsp;&nbsp;
+    
+        <span>Follow me</span>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        
         <a href="https://www.google.co.in/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
-        &nbsp;&nbsp;&nbsp;
+        
         <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        &nbsp;&nbsp;&nbsp;
+        
         <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    </span>
     </footer>
 </body>
-
 </html>
