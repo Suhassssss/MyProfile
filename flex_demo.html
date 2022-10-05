@@ -1,41 +1,133 @@
 <html>
-    <head>
-        <title>Flex Demo</title>
-        <style>
-           .container{
-                height: 500px;
-                border: 1px solid rgb(31, 31, 31);
-                display: flex;
-                flex-direction: column;
-                row-gap: 0px;
-                align-items: center;
-                justify-content: space-evenly;
-                
 
-           }
-           .container div{
-                background: rgb(189, 242, 244);
-                border: 1px solid rgb(2, 162, 162);
-                width: 300px;
-            }
-         
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="flex-item-1">
-                <h3> Angular - Web Development</h3>
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-            <div class="flex-item-2">
-                <h3> React - Web Development</h3>
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-            <div class="flex-item-3">
-                <h3> Fullstack Development</h3>
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-          
+<head>
+    <title>Flex Demo</title>
+    <link rel="shortcut icon" href="images\developer.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            transition: 0.5s;
+        }
+
+        body {
+            background-image: url(images/img1.jpg);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            row-gap: 0px;
+
+        }
+
+        .container-header {
+            text-align: right;
+            background-color: rgb(0, 192, 176);
+            color: rgb(0, 0, 0);
+            font-size: 1.3vw;
+            text-shadow: 0.2vh 0.2vh rgb(201, 198, 198);
+            height: 6vh;
+            font-weight: bold;
+            line-height: 6vh;
+            width: 100vw;
+        }
+
+        .container div {
+            background: rgb(189, 242, 244);
+            width: 300px;
+        }
+
+        .container-navbar {
+            background-color: rgb(18, 148, 137);
+            height: 94vh;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .content {
+            flex: 3.5;
+        }
+
+        .content iframe {
+            width: 72vw;
+            height: 93vh;
+            padding-left: 3vw;
+            border: none;
+        }
+
+        .usricon {
+            margin-right: 0.3vw;
+        }
+
+        .usrtxt {
+            margin-right: 4vw;
+        }
+
+        .container-navbar li {
+            list-style: none;
+        }
+
+        .container-navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+            text-transform: capitalize;
+            text-shadow: 0.3vh 0.3vh rgb(14, 13, 13);
+            font-weight: bolder;
+            font-size: larger;
+            transition: 0.3s;
+        }
+        .container-navbar li:hover a{
+            border-bottom: 0.4vh solid  rgb(29, 247, 255);
+            padding-left: 1vw;
+            padding-right: 1vw;
+            font-size: 1.5vw;
+            color:rgb(29, 247, 255);
+            padding-bottom: 0.4vh;
+            border-radius: 1vw 1vw 1vw 1vw;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-header">
+        <span class="usricon"><i class="fa fa-user" aria-hidden="true"></i></span>
+
+        <span class="usrtxt">Suhas Lawate</span>
+
+        <span class="usricon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+
+        <span class="usrtxt">7030889775</span>
+
+        <span class="usricon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+
+        <span class="usrtxt">suhasrlawate1999@gmail.com</span>
+    </div>
+    <div class="container">
+        <ul class="container-navbar">
+            <li><a href="home.html" target="my_frame">HOME</a></li>
+            <li><a href="techStack.html" target="my_frame">TECH STACK</a></li>
+            <li><a href="education.html" target="my_frame">EDUCATION</a></li>
+            <li><a href="project.html" target="my_frame">PROJECT</a></li>
+            <li><a href="hobbies.html" target="my_frame">HOBBIES</a></li>
+            <li><a href="personalDetail.html" target="my_frame">PERSONAL</a></li>
+            <li><a href="others.html" target="my_frame">OTHERS</a></li>
+        </ul>
+        <div class="content">
+            <iframe name="my_frame" src="home.html"></iframe>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
